@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "home-security"
+version = "0.1.0"
+description = "Home security monitoring system"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^2.3.0"
+flask-sqlalchemy = "^3.1.0"
+flask-marshmallow = "^0.15.0"
+marshmallow-sqlalchemy = "^0.29.0"
+python-dotenv = "^1.0.0"
+mysqlclient = "^2.2.0"
+
+[tool.poetry.scripts]
+api = "home_security.app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

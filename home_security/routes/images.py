@@ -1,7 +1,7 @@
 from flask import request
 from flask.views import MethodView
-from ..models import db, EventImage
-from ..schemas import event_image_schema, event_images_schema
+from ..models import db
+from ..models.event_image import EventImage, event_image_schema, event_images_schema
 from . import api
 
 class EventImageAPI(MethodView):

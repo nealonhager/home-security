@@ -1,7 +1,7 @@
 from flask import request
 from flask.views import MethodView
-from ..models import db, EventType
-from ..schemas import event_type_schema, event_types_schema
+from ..models import db
+from ..models.event_type import EventType, event_type_schema, event_types_schema
 from . import api
 
 class EventTypeAPI(MethodView):
